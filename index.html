@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>For My Love ❤️</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="70">
+    <!-- Audio Element (Hidden) -->
+    <audio id="bg-music" loop>
+      <source src="./music/vd1.mp3" type="audio/mpeg" />
+    </audio>
+
+    <!-- Navigation (Hamburger menu button removed) -->
+    <nav id="navbar" class="navbar navbar-expand fixed-top glass-nav">
+      <div class="container">
+        <a class="navbar-brand romantic-font text-danger" href="#home"
+          >Forever ❤️</a
+        >
+        <div class="navbar-nav ms-auto flex-row gap-2 gap-sm-3">
+          <a class="nav-link" href="#home">Home</a>
+          <a class="nav-link" href="#memories">Memories</a>
+          <a class="nav-link" href="#letter">Love Letter</a>
+          <a class="nav-link" href="#timeline">Love Story</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+      id="home"
+      class="hero-section d-flex align-items-center justify-content-center text-center"
+    >
+      <div class="floating-hearts-container" id="hero-hearts"></div>
+      <div class="container fade-in-element">
+        <h1 class="romantic-font display-1 text-danger mb-3">
+          To The Most Special Girl In My Life ❤️
+        </h1>
+        <p class="lead subtitle-text mb-4">
+          "Every moment with you is a beautiful memory."
+        </p>
+
+        <div class="hero-image-wrapper mb-4">
+          <img
+            src="/image/1.jpg"
+            alt="Our Couple Photo"
+            class="hero-img"
+            onerror="
+              this.src =
+                'https://via.placeholder.com/200x200/ffb3c6/ffffff?text=Your+Photo'
+            "
+          />
+        </div>
+
+        <button
+          id="startBtn"
+          class="btn btn-custom btn-lg rounded-pill shadow-lg"
+        >
+          Start Our Story ❤️
+        </button>
+      </div>
+    </section>
+
+    <!-- Music Player Section -->
+    <section id="music-player" class="py-4 text-center">
+      <div class="container fade-in-element">
+        <div
+          class="glass-card music-card mx-auto p-3 d-flex align-items-center justify-content-center gap-3"
+        >
+          <button
+            id="playPauseBtn"
+            class="btn btn-outline-danger rounded-circle"
+          >
+            <i class="fas fa-play"></i>
+          </button>
+          <div class="music-info text-start">
+            <h6 class="mb-0 fw-bold">Our Song</h6>
+            <small class="text-muted">Playing our memories</small>
+          </div>
+          <i class="fas fa-music text-danger music-anim"></i>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Memories Section -->
+    <section id="memories" class="py-5 bg-soft-pink">
+      <div class="container fade-in-element">
+        <h2 class="text-center romantic-font text-danger mb-5 display-4">
+          Our Beautiful Memories 📸
+        </h2>
+        <div class="row g-4 masonry-grid">
+          <!-- Memory 1 -->
+          <div class="col-md-4 col-sm-6">
+            <div class="memory-card">
+              <img
+                src="/image/12.jpg"
+                alt="Memory 1"
+                onerror="
+                  this.src =
+                    'https://via.placeholder.com/400x500/ffc2d1/ffffff?text=Photo+1'
+                "
+              />
+              <div class="memory-overlay">
+                <h5>Our First Memory ❤️</h5>
+              </div>
+            </div>
+          </div>
+          <!-- Memory 2 -->
+          <div class="col-md-4 col-sm-6">
+            <div class="memory-card">
+              <img
+                src="/image/3.jpg"
+                alt="Memory 2"
+                onerror="
+                  this.src =
+                    'https://via.placeholder.com/400x400/ffc2d1/ffffff?text=Photo+2'
+                "
+              />
+              <div class="memory-overlay">
+                <h5>That Beautiful Day</h5>
+              </div>
+            </div>
+          </div>
+          <!-- Memory 3 -->
+          <div class="col-md-4 col-sm-6">
+            <div class="memory-card">
+              <img
+                src="/image/5.jpg"
+                alt="Memory 3"
+                onerror="
+                  this.src =
+                    'https://via.placeholder.com/400x600/ffc2d1/ffffff?text=Photo+3'
+                "
+              />
+              <div class="memory-overlay">
+                <h5>Forever With You</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Love Letter Section -->
+    <section id="letter" class="py-5 text-center">
+      <div class="container fade-in-element">
+        <h2 class="romantic-font text-danger mb-4 display-4">
+          A Little Message For You 💌
+        </h2>
+        <div class="letter-card glass-card mx-auto p-5 text-start">
+          <p class="romantic-font fs-3 mb-4 text-danger">My love,</p>
+          <p class="lh-lg">
+            I love you with all my heart.<br />
+            No matter how many seasons change, I will love only you.<br />
+            You are the only one who can change my life so much.<br />
+            Since you, I have been having a hard time keeping up with other
+            girls.
+          </p>
+          <p class="lh-lg">
+            Thank you for being you.<br />
+            I love you more than words can explain. ❤️
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Love Timeline Section -->
+    <section id="timeline" class="py-5 bg-soft-pink">
+      <div class="container fade-in-element">
+        <h2 class="text-center romantic-font text-danger mb-5 display-4">
+          Our Journey ⏳
+        </h2>
+        <div class="timeline">
+          <div class="timeline-item left">
+            <div class="timeline-content glass-card">
+              <h4 class="text-danger">❤️ The Day We Met</h4>
+              <p class="text-muted">
+                <i class="far fa-calendar-alt"></i> 21 April 2026
+              </p>
+            </div>
+          </div>
+          <div class="timeline-item right">
+            <div class="timeline-content glass-card">
+              <h4 class="text-danger">❤️ Our First Date</h4>
+              <p class="text-muted">
+                <i class="far fa-calendar-alt"></i> 24 April 2026
+              </p>
+            </div>
+          </div>
+          <div class="timeline-item left">
+            <div class="timeline-content glass-card">
+              <h4 class="text-danger">❤️ Our First Photo</h4>
+              <p class="text-muted">
+                <i class="far fa-calendar-alt"></i> 24 April 2026
+              </p>
+            </div>
+          </div>
+          <div class="timeline-item right">
+            <div class="timeline-content glass-card">
+              <h4 class="text-danger">❤️ Today</h4>
+              <p class="text-muted">
+                <i class="far fa-calendar-alt"></i> Together and Still Growing
+                ❤️
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Counter & Surprise Section -->
+    <section id="counter-surprise" class="py-5 text-center">
+      <div class="container fade-in-element">
+        <h3 class="romantic-font text-danger mb-4">
+          We Have Been Together For ❤️
+        </h3>
+        <div
+          class="counter-box d-flex justify-content-center flex-wrap gap-3 mb-5"
+        >
+          <div class="time-box glass-card">
+            <span id="days">0</span><small>Days</small>
+          </div>
+          <div class="time-box glass-card">
+            <span id="hours">0</span><small>Hours</small>
+          </div>
+          <div class="time-box glass-card">
+            <span id="minutes">0</span><small>Minutes</small>
+          </div>
+          <div class="time-box glass-card">
+            <span id="seconds">0</span><small>Seconds</small>
+          </div>
+        </div>
+
+        <button
+          class="btn btn-danger btn-lg rounded-pill shadow-lg mt-3 surprise-btn"
+          data-bs-toggle="modal"
+          data-bs-target="#surpriseModal"
+        >
+          Click For A Surprise 💝
+        </button>
+      </div>
+    </section>
+
+    <!-- Surprise Modal -->
+    <div class="modal fade" id="surpriseModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content glass-card text-center p-4 border-0">
+          <div class="modal-body" id="modal-confetti-container">
+            <i class="fas fa-heart text-danger display-1 mb-3 pulse-anim"></i>
+            <h3 class="romantic-font text-danger mb-3">My Forever Choice ❤️</h3>
+            <p class="fs-5">
+              "You are my favorite person,<br />
+              my happiest memory,<br />
+              and my forever choice. ❤️"
+            </p>
+            <button
+              type="button"
+              class="btn btn-outline-danger mt-3"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Final Section -->
+    <footer
+      id="footer"
+      class="py-5 text-center position-relative overflow-hidden"
+    >
+      <div class="container fade-in-element">
+        <h2 class="romantic-font text-danger mb-3 display-4">
+          Forever Isn't Long Enough With You ❤️
+        </h2>
+        <p class="lead mb-4 fw-bold">You + Me = Forever</p>
+        <div class="footer-photo mx-auto mb-4">
+          <img
+            src="./image/1.jpg"
+            alt="Couple"
+            onerror="
+              this.src =
+                'https://via.placeholder.com/150x150/ffb3c6/ffffff?text=Us'
+            "
+          />
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+  </body>
+</html>
